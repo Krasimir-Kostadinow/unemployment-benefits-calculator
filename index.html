@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/png" href="./calculator.png">
+    <title>Калкулатор безработица</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./images/logo.png" class="logo" alt="logo">
+            <nav>
+                <ul id="menu-list">
+                    <Li><a href="#">Начало</a></Li>
+                    <Li><a href="#">Калкулатор</a></Li>
+                </ul>
+            </nav>
+            <img src="./images/menu.png" class="menu-icon" alt="menu" onclick="togglemenu()">
+        </div>
+        <button class="btn">Калкулатор</button>
+        <article class="row">
+            <h2 class="title">Как се пресмята размерът на паричното обезщетение за безработица</h3>
+                <h4 class="title-h4">Отпускането и пресмятането на паричното обезщетение за безработица</h4>
+                <p class="text-content"> Отпускането и пресмятането става на база на данните по чл. 5, ал.
+                    4, т. 1 от КСО, които се предоставят от работодателите, осигурителите, самоосигуряващите се и от
+                    осигурителните каси на НАП, както и на база на информацията, посочена в подадените документи от
+                    желаещите да получават обезщетението.<br>
+                    Размерът на дневното парично обезщетение за безработица е 60% от среднодневното възнаграждение или
+                    от
+                    среднодневния осигурителен доход, върху който са платени или се дължат вноски за фонд "Безработица"
+                    за
+                    последните 2 години преди месеца, през който е прекратено осигуряването. Това дневно обезщетение не
+                    може
+                    да е по-малко от минималния и по-голямо от максималния дневен размер на обезщетението за
+                    безработица,
+                    регламентиран ежегодно от Закона за бюджета на държавното обществено осигуряване.
+                </p>
+        </article>
+        <footer>
+            <div>© 2023
+                <a href="https://www.nssi.bg/fizicheski-lica/po-bg-zakonodatelstvo/pri-bezrabotitsa/"
+                    class="text-footer">Национален осигурителен институт</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const menulist = document.getElementById('menu-list');
+        menulist.style.maxHeight = '0px';
+
+        function togglemenu(params) {
+            if (menulist.style.maxHeight === '0px') {
+                menulist.style.maxHeight = '130px';
+            } else {
+                menulist.style.maxHeight = '0px';
+            }
+        }
+    </script>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
