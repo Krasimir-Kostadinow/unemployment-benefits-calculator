@@ -1,9 +1,9 @@
 ( () => {
 // Define routes and their associated functions
 const routes = {
-    '/': home,
-    '/about': about,
-    '/contact': contact
+    '/unemployment-benefits-calculator/': home,
+    '/unemployment-benefits-calculator/about': about,
+    '/unemployment-benefits-calculator/contact': contact
   };
   
   // Define the functions to be executed for each route
